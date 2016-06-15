@@ -1,0 +1,86 @@
+<DOCTYPE html> 
+<html> 
+
+<head> 
+<style> 
+a { 
+text-decoration: none; 
+} 
+</style> 
+<meta charset="utf-8"> 
+<title>Личный сайт студента Geekbrains</title> 
+<link rel="stylesheet" href="C:\Users\admin\Desktop\тимур\сайт\css.css"> 
+
+   <script type="text/javascript">
+	var answer = parseInt (Math.random() * 100);
+
+     function askQuestion2()
+   {
+   	while(true){
+	var number = prompt('Ходит игрок №1')
+      if(number == 'q')
+      	break;
+      if(number > answer){
+      	alert('Ваше число слишком большое');
+      	break;
+      } else if(number < answer){
+      	alert('Ваше число слишком маленькое');
+      	break;
+      } else if(number == answer){
+      	alert('Поздравляем, вы угадали! Победил игрок №1');
+      	break;
+      }
+     }
+    while(true){
+    var number = prompt('Введите число от 0 до 100. Для выхода нажмите q. Ходит игрок №2' );
+
+      if(number == 'q')
+      	break;
+      if(number > answer){
+      	alert('Ваше число слишком большое');
+      	break;
+      } else if(number < answer){
+      	alert('Ваше число слишком маленькое');
+      	break;
+      } else if(number == answer){
+      	alert('Поздравляем, вы угадали! Победил игрок №2');
+      	break;
+            }
+
+       }
+}
+
+</script>
+
+
+</head> 
+
+
+<body> 
+      <div id="header"> 
+            <a href="C:\Users\admin\Desktop\тимур\сайт\сайт.html" style="color: black">Главная страница</a><span>/</span> 
+         <a href="C:\Users\admin\Desktop\тимур\сайт\загадки.html" style="color:  black;">Загадки</a><span>/</span> 
+         <a href="C:\Users\admin\Desktop\тимур\сайт\угадайка.html" style="color:  black;">Угадайка</a><span>/</span> 
+         <a href="C:\Users\admin\Desktop\тимур\сайт\угадайка-мультиплеер.html" style="color:  black;">Угадайка мультиплеер</a><span>/</span> 
+      </div> 
+
+      <div id="title">
+            <h1>Личный сайт студента Geekbrains</h1> 
+      </div> 
+      <div id="pazzle">
+      	    <h3>Угадайка-мультиплеер</h3>
+      	    <p>Добро пожаловать в игру "Угадайка-мультиплеер". Играют два игрока. Ваша задача отгадать число. У вас будет неограниченное число попыток.</p>
+      </div>
+
+      <div id="onclick">
+            <a href="#" style="color: #000" onclick="askQuestion2();">Начать игру</a> 
+      </div>
+
+
+<div id="end"> 
+Copyright © 2016 <a href="https://geekbrains.ru/" target="_blank" style="color: white">GeekBrains</a> 
+
+</div> 
+
+</body> 
+</html>

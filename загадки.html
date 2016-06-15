@@ -1,0 +1,82 @@
+<DOCTYPE html> 
+<html> 
+
+<head> 
+<style> 
+a { 
+text-decoration: none; 
+} 
+</style> 
+<meta charset="utf-8"> 
+<title>Личный сайт студента Geekbrains</title> 
+<link rel="stylesheet" href="C:\Users\admin\Desktop\тимур\сайт\css.css"> 
+<script type="text/javascript">
+	
+   function questions()
+   {
+       var userAnswer = document.getElementById('userAnswer1').value;
+       var result = 0;
+       if(userAnswer == 'петух'){
+       	result++;}
+
+       var userAnswer = document.getElementById('userAnswer2').value;
+       if(userAnswer == 'павлин'){
+       	result++;}
+
+       var userAnswer = document.getElementById('userAnswer3').value;
+       if(userAnswer == 'сорока'){
+       	result++;}
+
+       var userAnswer = document.getElementById('userAnswer4').value;
+       if(userAnswer == 'шапка'){
+       	result++;}
+ 
+    alert('Вы угадали ' + result + '/4')
+
+   }
+</script>
+
+
+</head> 
+
+
+<body> 
+    <div id="header"> 
+         <a href="C:\Users\admin\Desktop\тимур\сайт\сайт.html" style="color: black">Главная страница</a><span>/</span> 
+         <a href="C:\Users\admin\Desktop\тимур\сайт\загадки.html" style="color:  black;">Загадки</a><span>/</span> 
+         <a href="C:\Users\admin\Desktop\тимур\сайт\угадайка.html" style="color:  black;">Угадайка</a><span>/</span> 
+         <a href="C:\Users\admin\Desktop\тимур\сайт\угадайка-мультиплеер.html" style="color:  black;">Угадайка мультиплеер</a><span>/</span> 
+    </div> 
+
+    <div id="title"> 
+          <h1>Личный сайт студента Geekbrains</h1> 
+    </div> 
+    <div id="pazzle">
+          <h3>Угадай загадки</h3>
+          <p>Не ездок, а со шпорами,не будильник, а всех будит</p>
+          <input type="text" id="userAnswer1">
+ 
+          <p>Распускает хвост павлином,ходит важным господином,по земле ногами - стук,как зовут его - ...</p>
+          <input type="text" id="userAnswer2">
+
+          <p>Верещунья белобока,а зовут ее ...</p>
+          <input type="text" id="userAnswer3">
+
+          <p>Сижу верхом,не ведаю на ком.</p>
+          <input type="text" id="userAnswer4">
+    </div>
+          <br></br>
+          
+    <div id="onclick1">
+          <a href="#" style="color: #000" onclick="questions()">Отправить</a>
+    </div>
+
+
+
+    <div id="end"> 
+          Copyright © 2016 <a href="https://geekbrains.ru/" target="_blank" style="color: white">GeekBrains</a> 
+
+     </div> 
+
+</body> 
+</html>
